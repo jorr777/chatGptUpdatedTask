@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="./script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  body {
+    background-color: #0E1621;
+    /* background:url('./gradient_2.jpg') ; */
+    /* imag; */
+  }
+
+  .container {
+    position: relative;
+    margin: auto;
+    width: 55%;
+    height: 100vh;
+    background-color: #17212B;
+  }
+
+  #result {
+    color: white;
+  }
+
+  .search_bar {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #submit {
+    height: 100%;
+    padding: 10px 10px;
+    width: 15%;
+    background-color: #202e3c;
+    border: 1px solid #384c5f;
+    border-radius: 5px;
+    color: white;
+  }
+
+  #question {
+    padding: 10px 5px;
+    width: 80%;
+    background-color: #202e3c;
+    border: 1px solid #384c5f;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+    color: white;
+  }
+
+  #result {
+    height: 80vh;
+    color: white;
+    overflow: auto;
+  }
+
+  .result_bot {
+    background-color: #202E3C;
+    padding: 20px;
+  }
+
+  .my_question {
+    padding: 20px;
+  }
+
+  *:disabled {
+    background-color: white;
+  }
+
+  .microSvg{
+    fill: white;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 80%;
+    }
+
+    #question {
+      width: 70%;
+    }
+
+    #submit {
+      width: 20%;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div>
+      <div id="result"></div>
+    </div>
+    <form>
+      <div class="search_bar">
+        <button id="submit" type="submit">Send</button>
+        <input type="text" id="question" placeholder="Take me your question" />
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg class="microSvg"  width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 478 478" xml:space="preserve">
+          <g>
+            <g id="XMLID_708_">
+              <path id="XMLID_2131_" d="M394,196.1c0-11.9-9.7-21.6-21.6-21.6s-21.6,9.7-21.6,21.6c0,61.7-50.2,111.8-111.8,111.8
+              s-111.8-50.2-111.8-111.8c0-11.9-9.7-21.6-21.6-21.6S84,184.2,84,196.1c0,78.2,58.1,143,133.4,153.5v85.2h-55.6
+              c-11.9,0-21.6,9.7-21.6,21.6s9.7,21.6,21.6,21.6h154.5c11.9,0,21.6-9.7,21.6-21.6s-9.7-21.6-21.6-21.6h-55.6v-85.2
+              C335.9,339.1,394,274.2,394,196.1z" />
+              <g id="XMLID_2124_">
+                <path id="XMLID_2050_" d="M239,0L239,0c-46.4,0-84,37.6-84,84v110.7c0,46.4,37.6,84,84,84l0,0c46.4,0,84-37.6,84-84V84
+                C323,37.6,285.4,0,239,0z M239.1,55.9c-15.1,0-27.4,12.3-27.4,27.4c0,6.9-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5
+                c0-28.9,23.5-52.4,52.4-52.4c6.9,0,12.5,5.6,12.5,12.5S246,55.9,239.1,55.9z" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
